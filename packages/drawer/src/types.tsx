@@ -295,6 +295,10 @@ export type DrawerNavigationEventMap = {
    * Event which fires when the drawer closes.
    */
   drawerClose: { data: undefined };
+  /**
+   * Event which fires when tapping on an item in the drawer.
+   */
+  drawerPress: { data: undefined; canPreventDefault: true };
 };
 
 export type DrawerNavigationHelpers = NavigationHelpers<
